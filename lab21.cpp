@@ -1,4 +1,4 @@
-// Please include header (lab21.h) here.
+#include "lab21.h"
 
 int main(){
 	srand(time(0));
@@ -28,6 +28,7 @@ int main(){
 		if(monster_action == 'G') mons.guard();
 		
 		if(player_action == 'H') p = hero.heal();
+		
 		
 		if(player_action == 'A') p = hero.attack(mons); 
 		if(monster_action == 'A') m = mons.attack(hero); 
